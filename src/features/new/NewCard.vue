@@ -69,12 +69,13 @@ defineProps({
 }
 
 .new-card__cover {
+  max-height: 250px;
 }
 
 .new-card__cover img {
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
