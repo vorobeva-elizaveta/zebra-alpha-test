@@ -4,8 +4,8 @@
   <header id="header" class="header">
     <div class="header__container base-container">
       <picture class="header__logo">
-        <source srcset="/logo.webp" type="image/webp" />
-        <img src="/logo.svg" alt="alpha-logo" />
+        <source :srcset="$basePath + '/logo.webp'" type="image/webp" />
+        <img :src="$basePath + '/logo.svg'" alt="alpha-logo" />
       </picture>
     </div>
   </header>

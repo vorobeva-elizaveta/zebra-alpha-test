@@ -5,8 +5,8 @@
     <div class="footer__container base-container">
       <div class="footer__content">
         <picture class="footer__logo">
-          <source srcset="/logo.webp" type="image/webp" />
-          <img src="/logo.svg" alt="alpha-logo" />
+          <source :srcset="$basePath + '/logo.webp'" type="image/webp" />
+          <img :src="$basePath + '/logo.svg'" alt="alpha-logo" />
         </picture>
         <p class="footer__label">©alpha, 2023</p>
       </div>

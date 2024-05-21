@@ -47,7 +47,11 @@ getNews(1)
         <div class="first-block__container base-container">
           <h1 class="first-block__title">Новости</h1>
         </div>
-        <img src="/first-block-background.jpeg" alt="" class="first-block__background-image" />
+        <img
+          :src="$basePath + '/first-block-background.jpeg'"
+          alt=""
+          class="first-block__background-image"
+        />
       </div>
       <div class="main__content base-container">
         <NewsList :news-data="news" class="main__news-list" />
