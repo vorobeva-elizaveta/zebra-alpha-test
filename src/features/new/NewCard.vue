@@ -6,23 +6,23 @@ defineProps({
 </script>
 
 <template>
-  <div class="new-card">
+  <article class="new-card">
     <div class="new-card__container">
       <div class="new-card__cover">
-        <img :src="newData.image" alt="" v-if="newData.image" />
+        <img :src="newData.image" alt="" v-if="newData?.image" />
       </div>
       <div class="new-card__content">
         <div class="content__top-block">
-          <NewCardDate :date="newData.date" />
-          <p class="new-card__name">{{ newData.name }}</p>
-          <p class="new-card__preview-text">{{ newData.previewText }}</p>
+          <NewCardDate :date="newData?.date" />
+          <h1 class="new-card__name">{{ newData?.name }}</h1>
+          <p class="new-card__preview-text">{{ newData?.previewText }}</p>
         </div>
         <div class="content__bottom-block">
-          <div class="new-card__type">{{ newData.type.value }}</div>
+          <div class="new-card__type">{{ newData?.type?.value }}</div>
         </div>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <style lang="css" scoped>
@@ -56,6 +56,7 @@ defineProps({
   padding: 16px 0;
   color: var(--text-blue-color);
   font-size: 22px;
+  line-height: 26.4px;
 }
 
 .new-card:hover .new-card__name {
