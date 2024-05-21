@@ -3,7 +3,7 @@
 <template>
   <footer id="footer" class="footer">
     <div class="footer__container base-container">
-      <div class="footer-content">
+      <div class="footer__content">
         <picture class="footer__logo">
           <source srcset="/logo.webp" type="image/webp" />
           <img src="/logo.svg" alt="alpha-logo" />
@@ -32,6 +32,7 @@
 }
 
 .footer__label {
+  margin-top: 16px;
   color: var(--text-gray-dark-color);
   font-size: 1rm;
 }

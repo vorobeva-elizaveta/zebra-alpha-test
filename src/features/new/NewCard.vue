@@ -94,6 +94,7 @@ defineProps({
   padding: 4px 16px;
   border-radius: 9999px;
   font-weight: normal;
+  line-height: 19.6px;
   background: var(--blue-bg);
 }
 </style>

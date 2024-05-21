@@ -34,7 +34,6 @@ const getNews = async (page) => {
   } finally {
     isNewsLoading.value = false
   }
-  return
 }
 
 getNews(1)
