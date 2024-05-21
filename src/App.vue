@@ -32,8 +32,15 @@ getNews(1)
   <div class="app__container">
     <TheHeader />
     <main class="main" id="main">
+      <div class="main__first-block">
+        <img
+          src="../public/first-block-background.jpeg"
+          alt=""
+          class="first-block__background-image"
+        />
+      </div>
       <div class="main__content base-container">
-        <NewsList :news-data="news" />
+        <NewsList :news-data="news" class="main__news-list" />
       </div>
     </main>
     <TheFooter />
@@ -48,5 +55,13 @@ getNews(1)
 }
 .main {
   flex: 1 1 auto;
+}
+
+.first-block__background-image {
+  width: 100%;
+}
+
+.main__news-list {
+  margin: 64px 0;
 }
 </style>
